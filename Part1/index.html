@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+    table, th, td {
+        border: 1px solid black;
+    }
+        label {
+            display: block;
+            margin-top: 20px;
+        }
+    </style>
+    
+    </head>
+    <body>
+    
+    <h1>
+        What would you like eat.    
+    </h1>
+        <form action="done.html">
+            <table>
+                <tr>
+                <th>
+                Name
+                </th>
+                <th>
+                Price
+                </th>
+                <th>
+                Select
+                </th>
+                </tr>
+                <tr>
+                    <td>Hamburger</td>
+                    <td><b>100kr</b></td>
+                    <td> <input type="checkbox" name="hamburger"></td>
+                </tr>
+                <tr>
+                    <td>Fish</td>
+                    <td><b>200kr</b></td>
+                    <td> <input type="checkbox" name="fish"></td>
+                </tr>
+                <tr>
+                    <td>Meat</td>
+                    <td><b>300kr</b></td>
+                    <td> <input type="checkbox" name="meat"></td>
+                </tr>
+
+
+            </table>
+            <label for="myname">Your name</label>
+            <input type="text" name="myname" id="myname">
+            <div>Comments</div>
+            <textarea name="comments"></textarea>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
