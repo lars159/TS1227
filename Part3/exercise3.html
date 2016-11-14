@@ -1,11 +1,59 @@
 <html>
 <head>
+
+    <style>
+    
+        .blue {
+           background-color: blue;
+            width: 100px;
+            float: left;
+        }
+        
+        .green {
+            background-color: green;
+            width: 100px;
+            float: left;
+        }
+        
+        .red {
+            background-color: red;
+            width: 100px;
+            float: left;
+        }
+        
+        #popup {
+            position: absolute;
+            background-color: gray;
+            opacity: 0.5;
+            width: 100%;
+            height: 100%;
+            display: none;  
+
+        } 
+        h1 { 
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 30px; 
+        }
+    </style>
+    
+    <script>
+    
+        function popup(){
+            document.getElementById('popup').style .display = 'block';
+        }
+        
+        
+    </script>
+    
 </head>
 <body>
-  <div style='border: 1px solid red; width: 100px;'>
-    <a href="#">foo</a>
-    <a href="#"style="border-color: blue; float: right;">bar</a>                <div style="clear:both;"></div>
-  </div>
-something
+    <div class="blue">Blue</div>
+    <div class="green">Green</div>
+    <div class="red" onclick="popup()">red</div>
+     
+    <div id="popup"> 
+        <h1>this is a popup</h1>
+    </div>
 </body>
 </html>

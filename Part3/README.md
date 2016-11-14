@@ -1,8 +1,5 @@
 #Advncae CSS with Javascript
-1. Debug excsie2 in ie7 whats seems to be the problem discuss
-2. Write a code that uses moment to formate date 
-3. 
-4.
-5.
-7. Extra Create a site that look like the image screenshot3
-
+1. Make the site loiok like screensho3.png
+2. Add a button that show a popup on click so it looks like Make the site loiok like screensho3.png
+3. Extra center the popup message using display flex 
+ 

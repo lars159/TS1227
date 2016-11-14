@@ -1,1 +1,1 @@
-##Angular with Promises
+##Angular
