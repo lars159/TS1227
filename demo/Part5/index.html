@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>    
+<script>
+    $(document).ready(function (){
+        const data = ["data", "data1"];
+         $.each(data,(index,d) => {
+            $('body').append('<div>' +d +'</div>');
+        });
+    })
+    
+    function post(){
+        $.post("/", data, () => {
+            
+        })
+    }
+    
+    function addComment(comment){
+        let comment = $("#commentField").val();
+        data.push(comment);
+        renderComments();
+    }
+    
+    
+</script>
+</head>
+
+<body>
+    
+    <input type="text" id="commentField">
+    <button onclick="addComent()"></button>
+</body>
+</html>

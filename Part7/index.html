@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="TrafficApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <h2>Todo</h2>
+    <div ng-controller="TrafficController">
+      <span>{{trafficList.remaining()}} of {{trafficList.traffic.length}} remaining</span>
+      [ <a href="" ng-click="archive()">archive</a> ]
+      <ul class="unstyled">
+        <li ng-repeat="traffic in trafficList">
+          <label class="checkbox">
+            <input type="checkbox" ng-model="traffic.done">
+            <span class="done-{{traffic.done}}">{{traffic.title}}</span>
+          </label>
+        </li>
+      </ul>
+      <form ng-submit="addTraffic()">
+        <input type="text" ng-model="todoText"  size="30"
+               placeholder="add a new traffic title here">
+        <input class="btn-primary" type="submit" value="add">
+      </form>
+    </div>
+  </body>
+</html>

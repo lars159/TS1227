@@ -1,15 +1,25 @@
 var restify = require('restify'), // require the restify library.
   server = restify.createServer(); // create an HTTP server.
+server.use(restify.bodyParser());
 
+
+const db = [];
 // add a route that listens on http://localhost:5000/hello/world
-server.get('/hello', function (req, res, cb) {
-  res.send("Hello World!");
-  return cb();
+server.get('/',  (req, res, cb) => {
+  res.send(db);
+  cb();
 });
 
-server.post('/hello', function (req, res, cb) {
-  res.send("Hello World!");
-  return cb();
+server.post('/',  (req, res, cb) => {
+  db.push(JSON.parse(req.body));
+  res.send(db);
+  cb();
+});
+
+server.put('/:index', (req, res, cb) => {
+  db[req.params.id] = JSON.parse(req.body)  ;
+  res.send(db);
+  cb();
 });
 
 

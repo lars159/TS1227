@@ -3,15 +3,13 @@
 
 1. Create a basic html/body structure.
 
-2. Define a single line break?
+2. Create a simple table?
 
 3. Create a hiden comment HTML tags?
 
 4. Make a hyperlink to google.com? [change open in TAB or window]
 
-5. Make a simple  table?
-
-6. try making a site that look like screenshot.png
+5. try making a site that look like screenshot.png
  
  
 Extra:

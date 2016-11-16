@@ -1,18 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-</head>
-    <body>
-        <h1 id="header">1</h1>
-        a
-        <input type="text" name="a" id="a" >
-        b
-        <input type="text" name="b" id="b">
-        =
-        <input type="text" name="c" id="c">
-        <button onclick="calc()" id="calc">Do calc</button>
-       
-        
+    <script src="http://www.deelay.me/10000/https://code.jquery.com/jquery-3.1.1.js" async></script>
+    
+    
         <script>
         
         document.getElementById("header").textContent = new Date().getFullYear() + " test";    
@@ -42,6 +33,27 @@
                 let b = document.getElementById("b").value;
                 document.getElementById("c").value = parseInt(a) + parseInt(b);
             }
+//            document.addEventListener('onload', () => {
+                document.getElementById("d").innerHTML = "asdf";
+            
+  //          });
+             
         </script>
+    </head>
+    <body>
+        <h1 id="header">1</h1>
+        a
+        <input type="text" name="a" id="a" >
+        b
+        <input type="text" name="b" id="b">
+        =
+        <input type="text" name="c" id="c">
+        <button onclick="calc()" id="calc">Do calc</button>
+       <div id="d"></div>
+        
+
+        
+    
+        <img src="http://deelay.me/2000/http://deelay.me/img/1000ms.gif">
     </body>
 </html>

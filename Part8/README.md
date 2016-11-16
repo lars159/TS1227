@@ -1,1 +1,1 @@
-##Angular with Jquery
+##Angular and scope

@@ -1,0 +1,15 @@
+<html ng-app="app">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script type="application/javascript" src="app.js"></script>
+</head>
+<body >
+    <div ng-controller="ParentCtrl">
+     Parent controller input <input ng-model="traffic.message">
+    
+    <div ng-controller="ChildCtrl">
+        Child controller input <input ng-model="traffic.message">
+    </div>
+    </div>
+</body>
+</html>
