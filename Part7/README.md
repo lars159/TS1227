@@ -1,6 +1,8 @@
 ##Angular
-1. Whats a directive
-2. Whats a markup
-3. rin open the console try to repair the code
-4. Add sort filter button
-5. Extra: create a cusom directive
+1. What is Angular trying to solve
+2. What are the advantages/disadvatage of Angular 
+3. Whats a directive
+4. Whats a markup
+5. Open index.html the console try to repair the code
+6. Add sort filter button.
+ Extra: create a cusom directive
