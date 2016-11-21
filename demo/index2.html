@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
     <script src="http://www.deelay.me/10000/https://code.jquery.com/jquery-3.1.1.js" async></script>
-    
-    
+ 
+</head>
+    <body>
+        <h1 id="header">1</h1>
+        a
+        <input type="text" name="a" id="a" >
+        b
+        <input type="text" name="b" id="b">
+        =
+        <span  id="c"></span>
+        <button onclick="calc()" id="calc">Do calc</button>
+       
+ 
         <script>
         
         document.getElementById("header").textContent = new Date().getFullYear() + " test";    
@@ -31,7 +42,7 @@
             function calc(){
                 let a = document.getElementById("a").value;
                 let b = document.getElementById("b").value;
-                document.getElementById("c").value = parseInt(a) + parseInt(b);
+                document.getElementById("c").innerHTML = parseInt(a) + parseInt(b);
             }
 //            document.addEventListener('onload', () => {
                 document.getElementById("d").innerHTML = "asdf";

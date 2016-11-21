@@ -5,7 +5,7 @@
 
 3. Why and when should you use $( document ).ready(function() 
 
-4. Bind a click listner so that somthing  is appended() to the body on click
+4. Bind a click listner so that somthing  is appended() to the  <p> button on click
 
 5. Create a new button that calls .show() hide() on a <p></p>.
 
