@@ -8,7 +8,7 @@
 3. create button that have a onclick="showAlert()" that calls a function that show a alert message. 
 
 4. Write a JavaScript program to display the current day and time 
-    using document.getElementById('').text();
+    using document.getElementById('....').text();
 
 5. Write a JavaScript program to calculate multiplication or division of two numbers
  
