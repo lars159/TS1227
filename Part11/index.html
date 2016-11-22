@@ -1,0 +1,33 @@
+<html>
+
+<body>
+<!--
+    <iframe id="veckonr" src="http://veckonr.se" width="300px"></iframe>
+     <iframe id="vecka" src="http://vecka.nu" width="300px"></iframe>
+-->
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+           // const veckonr = $("#veckonr").contents();
+        //    const vecka = $("#vecka").contents();
+            
+            $.get("http://sverigesradio.se/api/documentation/v2/metoder/trafik.html").then(function(trafik){ 
+                console.log(trafik)
+                return $.get("http://sverigesradio.se/api/documentation/v2/metoder/topplistor.html")
+             
+            }).then(function(topp){
+                
+             console.log(topp)
+            })
+            
+            
+        })
+    </script>
+</body>
+
+
+
+</html>
